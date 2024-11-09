@@ -1,20 +1,32 @@
-body{
+body {
     background-color: black;
     color: whitesmoke;
 }
 
-p{
+p {
     color: whitesmoke !important;
+    margin: 2px;
 }
 
-header, .resena, body, .skill, .contHardSkill, .contSoftSkill{
+header,
+.resena,
+body,
+.skill,
+.contHardSkill,
+.contSoftSkill,
+.container,
+.contacto {
     display: flex;
     align-items: center;
     text-align: center;
     flex-direction: column;
 }
 
-header, .resena, .skill{
+header,
+.resena,
+.skill,
+.containerPokemon,
+.contacto {
     width: 60%;
 }
 
@@ -22,17 +34,15 @@ header, .resena, .skill{
     flex-direction: row;
 }
 
-.card, .resena, .skill{
+.card,
+.resena,
+.skill,
+.container {
     margin-top: 8px;
     margin-bottom: 8px;
     background-color: rgba(126, 126, 126, 0.904);
     border-radius: 18px 18px 18px 18px;
 }
-
-.card{
-    width: 100%;
-}
-
 
 .col-md-4 {
     display: flex;
@@ -48,22 +58,36 @@ header, .resena, .skill{
     width: 75%;
 }
 
-.card-body {
+.card-body, .card, #contenedorPokemon {
+    width: 100%;
     display: flex;
     align-items: center;
-    flex-direction: column;
     color: whitesmoke;
 }
 
+.card-body, .card{
+    flex-direction: column;
+}
+
+#contenedorPokemon{
+    flex-direction: row;
+}
+
+#imagenPokemon, #informacionPokemon{
+    width: 50%;
+}
+
 .skill{
-    flex-direction: row; 
+    flex-direction: row;
 }
 
-.listHardSkill, .listSoftSkill{
-    display:inline-block;
+.listHardSkill,
+.listSoftSkill {
+    display: inline-block;
 }
 
-.contHardSkill, .contSoftSkill{
+.contHardSkill,
+.contSoftSkill {
     margin: 4px;
     width: 50%;
     height: 100%;
@@ -71,13 +95,20 @@ header, .resena, .skill{
     max-height: 100%;
 }
 
-.contHardSkill h3, .contSoftSkill h3{
+.contHardSkill h3,
+.contSoftSkill h3 {
     margin: 3px;
 }
 
-.listHardSkill p, .contSoftSkill p{
+.listHardSkill p,
+.contSoftSkill p {
     margin: 0;
 }
 
+form{
+    width: 100%;
+}
 
-
+label{
+    color: black;
+}
