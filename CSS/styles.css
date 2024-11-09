@@ -1,0 +1,83 @@
+body{
+    background-color: black;
+    color: whitesmoke;
+}
+
+p{
+    color: whitesmoke !important;
+}
+
+header, .resena, body, .skill, .contHardSkill, .contSoftSkill{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+header, .resena, .skill{
+    width: 60%;
+}
+
+.row g-0 {
+    flex-direction: row;
+}
+
+.card, .resena, .skill{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: rgba(126, 126, 126, 0.904);
+    border-radius: 18px 18px 18px 18px;
+}
+
+.card{
+    width: 100%;
+}
+
+
+.col-md-4 {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    object-fit: contain;
+}
+
+.col-md-8 {
+    display: flex;
+    width: 75%;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+.skill{
+    flex-direction: row; 
+}
+
+.listHardSkill, .listSoftSkill{
+    display:inline-block;
+}
+
+.contHardSkill, .contSoftSkill{
+    margin: 4px;
+    width: 50%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+.contHardSkill h3, .contSoftSkill h3{
+    margin: 3px;
+}
+
+.listHardSkill p, .contSoftSkill p{
+    margin: 0;
+}
+
+
+
